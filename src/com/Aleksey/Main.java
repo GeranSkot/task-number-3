@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("can you enter the word please:");
+        System.out.print("enter the word please:");
         Scanner scan = new Scanner(System.in);
         String sc = scan.next();
         pal(sc);
@@ -16,8 +16,6 @@ public class Main {
         for (int i = sc.length() - 1; i >= 0; --i)
             r += sc.charAt(i);
         return r;
-
-
     }
 
     public static Boolean pal(String sc) {
@@ -27,6 +25,5 @@ public class Main {
             System.out.println("not even palindrome");
         }
         return sc.equals(reverseString(sc));
-
     }
 }
